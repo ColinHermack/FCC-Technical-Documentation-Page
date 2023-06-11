@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"
+  <head>
+    <meta charset="utf-8">
+    <title>Swift Technical Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"</link>
+  </head>
+  <main id="main-doc">
+    <nav id="navbar">
+      <header id="navbar-heading">
+        <h1>The Swift Programming Language</h1>
+      </header>
+      <ul>
+        <li><a class="nav-link" href="#The_Basics">The Basics</a></li>
+        <li><a class="nav-link" href="#Basic_Operators"</a>Basic Operators<a></li>
+        <li><a class="nav-link" href="#Strings_And_Characters">Strings and Characters</a></li>
+        <li><a class="nav-link" href="#Control_Flow">Control Flow</a></li>
+        <li><a class="nav-link" href="#Functions">Functions</a></li>
+      </ul>
+    </nav>
+    <div id="info-section">
+      <section class="main-section" id="The_Basics">
+        <header>The Basics</header>
+        <p>Swift is a programming language for iOS, macOS, watchOS, and tvOS app development. If you have experience developing in C or Objective-C, many parts of Swift will be familiar to you.</p>
+        <p>Constants and variables associate a name (such as maximumNumberOfLoginAttempts or welcomeMessage) with a value of a particular type (such as the number 10 or the string "Hello"). The value of a constant can’t be changed once it’s set, whereas a variable can be set to a different value in the future.</p>
+        <p>Constants and variables must be declared before they’re used. You declare constants with the let keyword and variables with the var keyword. Here’s an example of how constants and variables can be used to track the number of login attempts a user has made:</p>
+        <div class="codeblock">
+        <code> <span class="decl">let</span> maxNumAttempts = <span class="num">10</span><br>
+        <span class="decl">var</span> currAttemps = <span class="num">5</span></code>
+        </div>
+      </section>
+      <section class="main-section" id="Basic_Operators">
+        <header>Basic Operators</header>
+        <p>An operator is a special symbol or phrase that you use to check, change, or combine values. For example, the addition operator (+) adds two numbers, as in let i = 1 + 2, and the logical AND operator (&&) combines two Boolean values, as in if enteredDoorCode && passedRetinaScan.</p>
+        <p>The assignment operator (a = b) initializes or updates the value of a with the value of b:</p>
+        <div class="codeblock">
+          <code><span class="decl">let</span> b = <span class="num">10</span><br>
+          <span class="decl">var</span> a = <span class="num">5</span><br>
+          a = b // a is now equal to 10</code>
+        </div>
+        <p>Swift supports the four standard arithmetic operators for all number types:</p>
+        <ul>
+          <li>Addition (+)</li>
+          <li>Subtraction (-)</li>
+          <li>Multiplication (*)</li>
+          <li>Division (/)</li>
+        </ul>
+        <p>The remainder operator (a % b) works out how many multiples of b will fit inside a and returns the value that’s left over (known as the remainder).</p>
+        <div class="codeblock">
+          <code><span class="num">9</span> % <span class="num">4</span> // Equals 1</code>
+        </div>
+      </section>
+      <section class="main-section" id="Strings_And_Characters">
+        <header>Strings and Characters</header>
+        <p>A string is a series of characters, such as "hello, world" or "albatross". Swift strings are represented by the String type. The contents of a String can be accessed in various ways, including as a collection of Character values.</p>
+        <p>You can include predefined String values within your code as string literals. A string literal is a sequence of characters surrounded by double quotation marks (").</p>
+        <div class="codeblock">
+          <code><span class="decl">let</span> someString = "Some string literal value"</code>
+        </div>
+        <p>String values can be added together (or concatenated) with the addition operator (+) to create a new String value:</p>
+        <div class="codeblock">
+          <code><span class="decl">let</span> a = "hello"<br>
+          <span class="decl">let</span> b = "there"<br>
+          <span class="decl">let</span> greeting = a + " " + b<br>
+          //greeting now equals "hello there"</code>
+        </div>
+      </section>
+      <section class="main-section" id="Control_Flow">
+        <header>Control Flow</header>
+        <p>Swift provides a variety of control flow statements. These include while loops to perform a task multiple times; if, guard, and switch statements to execute different branches of code based on certain conditions; and statements such as break and continue to transfer the flow of execution to another point in your code.</p>
+        <p>You use the for-in loop to iterate over a sequence, such as items in an array, ranges of numbers, or characters in a string.</p>
+        <p>A while loop performs a set of statements until a condition becomes false. These kinds of loops are best used when the number of iterations isn’t known before the first iteration begins. Swift provides two kinds of while loops:</p>
+        <ul>
+          <li>while evaluates its condition at the start of each pass through the loop.</li>
+          <li>repeat-while evaluates its condition at the end of each pass through the loop.</li>
+        </ul>
+          <p>It’s often useful to execute different pieces of code based on certain conditions. You might want to run an extra piece of code when an error occurs, or to display a message when a value becomes too high or too low. To do this, you make parts of your code conditional.</p>
+          <p>Swift provides two ways to add conditional branches to your code: the if statement and the switch statement. Typically, you use the if statement to evaluate simple conditions with only a few possible outcomes. The switch statement is better suited to more complex conditions with multiple possible permutations and is useful in situations where pattern matching can help select an appropriate code branch to execute.</p>
+      </section>
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p>Functions are self-contained chunks of code that perform a specific task. You give a function a name that identifies what it does, and this name is used to “call” the function to perform its task when needed.</p>
+        <p>Every function in Swift has a type, consisting of the function’s parameter types and return type. You can use this type like any other type in Swift, which makes it easy to pass functions as parameters to other functions, and to return functions from functions. Functions can also be written within other functions to encapsulate useful functionality within a nested function scope.</p>
+      </div>
+    </section>
+  </main>
+</html>
