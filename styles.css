@@ -1,0 +1,110 @@
+main {
+  background-color: black;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-section {
+  width: 80%;
+  text-align: left;
+  margin: 5 auto;
+}
+
+header {
+  font-size: 1.6em;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+#info-section {
+  width: 70%;
+  padding: 0 15px;
+  overflow: auto;
+  height: 100vh;
+}
+
+#navbar {
+  width: 30%;
+  text-align: left;
+  border-right: 0.5px solid rgb(120, 120, 120);
+}
+
+#main-doc {
+  display: flex;
+  justify-content: space-between;
+}
+
+code {
+  text-align: left;
+}
+
+.codeblock {
+  border: 0.5px solid rgb(120, 120, 120);
+  padding: 15px;
+  background-color: rgb(25, 25, 25);
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+p {
+  font-size: 1.05em;
+}
+
+.decl {
+  color: rgb(255, 60, 127);
+}
+
+.num {
+  color: rgb(255, 200, 0);
+}
+
+#navbar h1 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 15px 0;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+
+#navbar li a:hover {
+  color: rgb(176, 176, 176);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+#navbar-heading {
+  width: 100%;
+  border-bottom: solid 0.5px rgb(120, 120, 120);
+}
+
+@media (max-width: 550px) {
+  #navbar {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}
